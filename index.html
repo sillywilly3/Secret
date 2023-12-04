@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>   ‍   </title>
+</head>
+<body>
+  <h1>Secret...</h1>
+  <script>
+    var desiredURL = "https://sillywilly3.github.io/Secret/"; // Replace this with your desired website URL
+    var win = window.open('about:blank'); // Open about:blank in a new window
+    win.document.body.style.margin = "0";
+    win.document.body.style.height = "100vh";
+    var iframe = win.document.createElement("iframe");
+    iframe.style.border = "none";
+    iframe.style.width = "100%";
+    iframe.style.height = "100%";
+    iframe.style.margin = "0";
+    iframe.referrerPolicy = "no-referrer";
+    iframe.allow = "fullscreen";
+    iframe.src = desiredURL;
+    win.document.body.appendChild(iframe);
+  </script>
+</body>
+</html>
